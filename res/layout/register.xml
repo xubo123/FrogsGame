@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" >
+
+    <Button
+        android:id="@+id/checkaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menu_cell_background"
+        android:text="检查"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/account"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/checkaccount"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="账号："
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkaccount"
+        android:layout_alignTop="@+id/checkaccount"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@+id/checkaccount"
+        android:layout_toRightOf="@+id/account_text"
+        android:ems="10"
+        android:hint="输入字母或数字"
+        android:visibility="gone" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/account_text"
+        android:layout_below="@+id/account_text"
+        android:layout_alignTop="@+id/Name"
+        android:gravity="center"
+        android:text="真实姓名"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/name"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="请填写真实姓名"
+        android:singleLine="true" >
+    </EditText>
+
+    <Spinner
+        android:id="@+id/sexspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/checkaccount"
+        android:layout_below="@+id/checkaccount"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/account"
+        android:entries="@array/sex"
+        android:prompt="@string/sextype"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/phoneNum_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignTop="@+id/phoneNum"
+        android:gravity="center"
+        android:text="手机号码"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/phoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Name"
+        android:layout_below="@+id/Name"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/getRegisterCode"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="请输入手机号码"
+        android:phoneNumber="true"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/RegisterCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/getRegisterCode"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/phoneNum"
+        android:layout_toRightOf="@+id/textView1"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="请填写验证码"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phoneNum"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/IDlastNum"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="例:湖北武汉"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/address"
+        android:layout_alignBottom="@+id/address"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="地址："
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/RegisterCode"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/password_text"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="请填写不少于六位的密码"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/password1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/password_text2"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="请再次填写密码"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textViewsf"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="身份证号 ："
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/nextstep"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/password_text2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/menu_cell_background"
+        android:text="继续认证"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/finishRegi"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/password2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/menu_cell_background"
+        android:text="确认注册"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/words"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nextstep"
+        android:layout_below="@+id/finishRegi"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="点击上面的【确认注册】，即表示你同意" />
+
+    <TextView
+        android:id="@+id/text_words"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/words"
+        android:layout_below="@+id/words"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="《窗友软件许可及服务协议》"
+        android:textColor="#87ceeb" />
+
+    <Button
+        android:id="@+id/getRegisterCode"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/phoneNum"
+        android:layout_alignRight="@+id/finishRegi"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/menu_cell_background"
+        android:text="获取验证码 "
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/IDlastNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewsf"
+        android:layout_alignBottom="@+id/textViewsf"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textViewsf"
+        android:ems="10"
+        android:hint="请填写身份证后8位"
+        android:visibility="gone" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/password_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/password_text"
+        android:layout_alignTop="@+id/password2"
+        android:gravity="center"
+        android:text="确认密码"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignTop="@+id/password1"
+        android:layout_toLeftOf="@+id/phoneNum"
+        android:gravity="left|center"
+        android:text="密        码"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/phoneNum_text"
+        android:layout_alignTop="@+id/RegisterCode"
+        android:gravity="left|center"
+        android:text="验  证  码"
+        android:textSize="18sp" />
+
+</RelativeLayout>

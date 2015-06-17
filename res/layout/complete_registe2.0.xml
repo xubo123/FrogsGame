@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/logo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_grey" />
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_2"
+        android:layout_centerHorizontal="true"
+        android:text="恭喜您已经注册成功"
+        android:textColor="@color/text_color"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_1"
+        android:layout_centerHorizontal="true"
+        android:text="我们建议您先花1分钟"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/attention"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_2"
+        android:background="@layout/btn_shape"
+        android:text="认证班级" />
+
+    <TextView
+        android:id="@+id/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/attention"
+        android:layout_centerHorizontal="true"
+        android:text="开启所有功能" 
+        android:textSize="24sp" />
+     <TextView
+        android:id="@+id/text_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_3"
+        android:layout_centerHorizontal="true"
+        android:text="或" 
+        android:textSize="24sp" />
+     <Button
+        android:id="@+id/login_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_4"
+        android:text="直接登录" />
+
+</RelativeLayout>

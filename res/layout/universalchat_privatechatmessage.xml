@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="15dp" >
+
+    <TextView
+        android:id="@+id/tv_sendtime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:text="11:22"
+        android:textColor="@color/graydark" />
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:paddingLeft="5dp"
+    android:paddingRight="50dp"
+   >
+
+        <ImageView
+            android:id="@+id/iv_privatechaticon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/userlogo" 
+            android:onClick="iconOnclick"/>
+
+        <TextView
+            android:id="@+id/textView_privatechat_message"
+            style="@style/chat_content_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_privatechaticon"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/gray"
+            android:gravity="center|left"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:onClick="chatItemOnClick"
+            android:text=""
+            />
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_light_gray"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:weightSum="1" >
+   
+    <ListView
+        android:id="@+id/joined_grade_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" >
+    </ListView>
+ <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+    <Button
+        android:id="@+id/addgrade"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/menu_cell_background"
+        android:text="添加我的班级"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView1_addclass"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|left"
+        android:text="请选择您所在的班级："
+        android:textSize="16sp" />
+
+    <!-- 班级列表 -->
+
+
+    <RelativeLayout
+        android:id="@+id/gradelist_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <Spinner
+            android:id="@+id/gradelist_sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:animationCache="true"
+            android:drawSelectorOnTop="false"
+            android:spinnerMode="dialog" >
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/makeClassmateList"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/gradelist_sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/menu_cell_background"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="查看班级同学名单"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1_add"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|left"
+        android:text="请选择同班其他三个同学姓名："
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/classmateList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/classmate1_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学1" />
+
+            <CheckBox
+                android:id="@+id/classmate2_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学2" />
+
+            <CheckBox
+                android:id="@+id/classmate3_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/classmate4_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学4" />
+
+            <CheckBox
+                android:id="@+id/classmate5_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学5" />
+
+            <CheckBox
+                android:id="@+id/classmate6_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/classmate7_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学7" />
+
+            <CheckBox
+                android:id="@+id/classmate8_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学8" />
+
+            <CheckBox
+                android:id="@+id/classmate9_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学9" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/check_adddata"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/menu_cell_background"
+        android:text="确认添加"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

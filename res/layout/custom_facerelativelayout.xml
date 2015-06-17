@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hust.schoolmatechat.FaceInput.FaceRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FaceRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_footer_bg" >
+
+        <ImageButton
+            android:id="@+id/btn_face"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/chat_send_btn"
+            android:src="@drawable/ib_face" />
+
+        <Button
+            android:id="@+id/button_chat_send"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/menu_cell_background"
+            android:onClick="buttonsOnClick"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/button_chat_sendno"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:onClick="buttonsOnClick"
+            android:background="#00000000"
+             android:scaleType="fitXY"
+            android:src="@drawable/send_no" />
+
+        <EditText
+            android:id="@+id/editText_chat_chatcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="56dp"
+            android:layout_toRightOf="@id/btn_face"
+            android:background="@drawable/login_edit_normal"
+            android:singleLine="true"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/rl_input" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" > -->
+
+
+    <!-- <ImageButton -->
+    <!-- android:id="@+id/btn_face" -->
+    <!-- android:layout_width="40dip" -->
+    <!-- android:layout_height="40dip" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginLeft="8dip" -->
+    <!-- android:src="@drawable/ib_face" /> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/relativeLayout1" -->
+    <!-- android:layout_width="60dp" -->
+    <!-- android:layout_height="50dp" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_alignParentRight="true" > -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/button_chat_send" -->
+    <!-- android:layout_width="50dp" -->
+    <!-- android:layout_height="35dp" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:background="@drawable/menu_cell_background" -->
+    <!-- android:onClick="buttonsOnClick" -->
+    <!-- android:text="发送" -->
+    <!-- android:textColor="@color/white" -->
+    <!-- android:textSize="14sp" -->
+    <!-- android:visibility="gone" /> -->
+
+
+    <!-- <ImageButton -->
+    <!-- android:id="@+id/button_chat_sendno" -->
+    <!-- android:layout_width="40dp" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:background="#00000000" -->
+    <!-- android:src="@drawable/send_no" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/editText_chat_chatcontent" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginLeft="1dp" -->
+    <!-- android:layout_marginRight="1dp" -->
+    <!-- android:layout_toLeftOf="@id/relativeLayout1" -->
+    <!-- android:layout_toRightOf="@id/btn_face" -->
+    <!-- android:singleLine="true" > -->
+    <!-- </EditText> -->
+    <!-- </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/ll_facechoose"
+        android:layout_width="fill_parent"
+        android:layout_height="124dip"
+        android:layout_below="@id/rl_input"
+        android:background="#f6f5f5"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_contains"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/function_choose"
+            android:layout_width="fill_parent"
+            android:layout_height="124dip"
+            android:layout_below="@id/rl_input"
+            android:background="#f6f5f5"
+            android:padding="10dp" 
+             android:visibility="gone" 
+             >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                  <ImageView
+                      android:id="@+id/send_image"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginBottom="25dp"
+                      android:layout_marginRight="10dp"
+                      android:onClick="buttonsOnClick"
+                      android:src="@drawable/sendimage" />
+
+                  <TextView
+                      android:id="@+id/textView1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignLeft="@+id/send_image"
+                      android:layout_alignParentBottom="true"
+                      android:layout_alignRight="@+id/send_image"
+                      android:gravity="center"
+                      android:textColor="@color/subscribe_item_text_color"
+                      android:text="发送图片" />
+
+            </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                  <ImageView
+                      android:id="@+id/take_photo"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginBottom="25dp"
+                      android:layout_marginRight="10dp"
+                      android:onClick="buttonsOnClick"
+                      android:src="@drawable/takephoto" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/take_photo"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/take_photo"
+                android:text="拍照发送"
+                 android:gravity="center"
+                android:textColor="@color/subscribe_item_text_color" />
+
+            </RelativeLayout>
+            
+          
+ <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp" >
+ <ImageView
+                      android:id="@+id/send_file"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginBottom="25dp"
+                      android:layout_marginRight="10dp"
+                      android:onClick="buttonsOnClick"
+                      android:src="@drawable/sendfile" />
+
+            <TextView
+                android:id="@+id/TextView001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/send_file"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/send_file"
+                android:gravity="center"
+                android:text="文件传输"
+                android:textColor="@color/subscribe_item_text_color" />
+
+            </RelativeLayout>
+           
+
+            
+
+
+    </LinearLayout>
+
+</com.hust.schoolmatechat.FaceInput.FaceRelativeLayout>

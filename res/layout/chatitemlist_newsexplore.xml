@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <!--  <RelativeLayout
+        android:id="@+id/layout_newsexplore_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/button_newsexplore_return"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="16sp"
+            android:text="返回" 
+            android:onClick="buttonsOnclick"/>
+        
+        
+        <TextView
+        android:id="@+id/textView_newsexplore_channelname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button_newsexplore_return"
+        android:layout_toLeftOf="@+id/button_newsexplore_option"
+        android:text="channelname" 
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+        <Button
+            android:id="@+id/button_newsexplore_option"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="选项"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" 
+            android:onClick="buttonsOnclick"/>
+
+        
+
+    </RelativeLayout> -->
+
+    <WebView
+        android:id="@+id/webview_newsexplore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

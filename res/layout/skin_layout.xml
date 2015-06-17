@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="16dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/kind_skin"
+        android:textSize="18sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider" />
+    <RelativeLayout
+        android:id="@+id/person_skiin_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+
+        <RadioGroup
+            android:id="@+id/person_skin_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/person_kind1_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝色"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/person_kind2_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="黄色"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/person_kind3_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绿色"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

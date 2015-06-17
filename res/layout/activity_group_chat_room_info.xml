@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hust.schoolmatechat.ViewGroupChatDetailedInfoActivity" >
+    
+    <LinearLayout 
+        android:id="@+id/groupchat_room_name_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView 
+	        android:text="聊天室名字:"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    <TextView 
+	        android:id="@+id/groupchat_room_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView 
+        android:id="@+id/groupchat_room_members"
+        android:text="聊天室成员:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupchat_room_name_all"
+        android:layout_marginTop="20dp"/>
+    
+    <ListView 
+        android:id="@+id/groupchat_room_detailed_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/groupchat_room_members">
+    </ListView>
+
+</RelativeLayout>

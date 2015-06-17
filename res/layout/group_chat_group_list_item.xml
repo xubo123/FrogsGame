@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">     
+  
+    <ImageView
+        android:id="@+id/group_chat_group_icon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/group_item_arrow_down" />  
+    <TextView
+        android:id="@+id/group_chat_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/group_chat_group_icon"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:padding="1dp"
+        android:singleLine="true"
+        android:text="groupname"
+        android:textSize="17sp" />
+	<CheckBox     
+        android:id="@+id/group_chat_group_checkbox"    
+        android:layout_width="wrap_content"    
+        android:layout_height="wrap_content"    
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:focusable="false"        
+        android:focusableInTouchMode="true"        
+        android:clickable="true"/> 
+</RelativeLayout>

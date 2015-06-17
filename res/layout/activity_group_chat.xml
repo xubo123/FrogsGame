@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hust.schoolmatechat.CreateGroupChatActivity" >
+    
+<!--     <TextView
+        android:id="@+id/exitst_group_chat_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exitst_group_chat_title"/> -->
+ 
+<!--     <ListView
+        android:id="@+id/exist_group_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_light_gray" >
+
+    </ListView> -->
+
+<!--     <View
+        android:id="@+id/group_chat_list_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/exist_group_chat_list"
+        android:background="?android:attr/listDivider" /> -->
+
+    <EditText
+        android:id="@+id/group_chat_room_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/group_chat_new_room_name"/>
+    
+<!--     <TextView
+        android:id="@+id/search_friends_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/search_friends_title"
+        android:layout_below="@id/group_chat_room_name"/>
+        
+    <SearchView 
+        android:id="@+id/search_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_friends_title"
+        android:iconifiedByDefault="false">
+        
+    </SearchView> -->
+    
+    <ListView 
+        android:id="@+id/friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group_chat_room_name">
+        
+    </ListView>
+
+</RelativeLayout>

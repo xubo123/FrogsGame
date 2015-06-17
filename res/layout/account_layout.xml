@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+      
+    
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+       
+        >
+    <RelativeLayout
+            android:id="@+id/photo_rl"
+			android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="头像"
+            />
+    <ImageView
+        android:id="@+id/person_photo_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bglogo" />
+
+    </RelativeLayout>
+    
+<TextView 
+    android:layout_width="fill_parent" 
+    android:layout_height="5dp"
+    />
+
+   <View
+          android:layout_width="fill_parent"
+          android:layout_height="1dip"
+          android:background="@drawable/bg_light_gray" />
+
+    <RelativeLayout
+            android:id="@+id/account"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_marginLeft="16dp"
+            >
+        <TextView
+
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:text="账号"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+        <TextView
+                android:id="@+id/accountNum_tv"               
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+    </RelativeLayout>
+
+  <View
+          android:layout_width="fill_parent"
+          android:layout_height="1dip"
+          android:background="@drawable/bg_light_gray" />
+
+
+    <RelativeLayout
+            android:id="@+id/phoneNum"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_marginLeft="16dp"
+            >
+    <TextView
+            
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:text="手机号"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    <TextView
+            android:id="@+id/phoneNum_tv"            
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+</RelativeLayout>
+
+  <View
+          android:layout_width="fill_parent"
+          android:layout_height="1dip"
+          android:background="@drawable/bg_light_gray" />
+
+     <RelativeLayout
+            android:id="@+id/name"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_marginLeft="16dp"
+            >
+        <TextView
+                
+               android:layout_centerVertical="true"
+                android:text="姓名"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+        <TextView
+                android:id="@+id/person_name_tv"         
+                android:textSize="14sp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                />
+        <EditText
+                android:id="@+id/et_person_name"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                />
+       
+    </RelativeLayout>
+     <View
+          android:layout_width="fill_parent"
+          android:layout_height="1dip"
+          android:background="@drawable/bg_light_gray" />
+       <RelativeLayout
+            android:id="@+id/sex"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_marginLeft="16dp"
+            >
+        <TextView
+                
+                android:layout_centerVertical="true"
+                android:text="性别"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+        <TextView
+                android:id="@+id/person_sex_tv"               
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+    </RelativeLayout>
+     
+    <View
+          android:layout_width="fill_parent"
+          android:layout_height="1dip"
+          android:background="@drawable/bg_light_gray" />
+
+    
+</LinearLayout>
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="20dp"
+       android:background="@drawable/bg_light_gray" />
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+       
+        >
+
+      <RelativeLayout
+            android:id="@+id/address"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_marginLeft="16dp"
+            >
+        <TextView
+                
+               android:layout_centerVertical="true"
+                android:text="地址"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+        <TextView
+                android:id="@+id/address_tv"         
+                android:textSize="14sp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+    </RelativeLayout>
+  <View
+          android:layout_width="fill_parent"
+          android:layout_height="1dip"
+          android:background="@drawable/bg_light_gray" />
+
+      <RelativeLayout
+            android:id="@+id/email"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_marginLeft="16dp"
+            >
+        <TextView
+                
+               android:layout_centerVertical="true"
+                android:text="电子邮箱"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+        <TextView
+                android:id="@+id/email_tv"      
+                android:textSize="14sp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+    </RelativeLayout>
+<View
+          android:layout_width="fill_parent"
+          android:layout_height="1dip"
+          android:background="@drawable/bg_light_gray" />
+
+      <RelativeLayout
+            android:id="@+id/sign"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_marginLeft="16dp"
+            >
+        <TextView
+
+               
+                android:layout_centerVertical="true"
+                android:text="个性签名"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+        <TextView
+                android:id="@+id/person_sign_tv"      
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+    </RelativeLayout>
+<View
+          android:layout_width="fill_parent"
+          android:layout_height="1dip"
+          android:background="@drawable/bg_light_gray" />
+
+      <RelativeLayout
+            android:id="@+id/grade"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_marginLeft="16dp"
+            >
+        <TextView    
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:text="学习经历"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+        <TextView
+                android:id="@+id/grade_tv"
+                android:text="查看或添加班级"
+                android:textColor="@color/greendark"
+                 android:textSize="14sp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_style"
+            android:text="确认修改"
+            android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

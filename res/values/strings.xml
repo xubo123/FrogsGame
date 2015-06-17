@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">窗友</string>
+    <string name="action_search">搜索</string>
+    <string name="action_plus">功能</string>
+    <string name="action_collection">推荐校友名片</string>
+    <string name="action_news">管理消息订阅</string>
+    <string name="action_class">我的学习经历</string>
+    <string name="action_settings">设置</string>
+    <string name="action_feed">意见反馈</string>
+    <string name="plus_group_chat">发起群聊</string>
+    <string name="plus_add_friend">添加朋友</string>
+    <string name="plus_video_chat">视频聊天</string>
+    <string name="plus_scan">扫一扫</string>
+    <string name="plus_take_photo">拍照分享</string>
+    <string name="chat_fragment">消息</string>
+    <string name="contacts_fragment">联系人</string>
+    <string name="news_fragment">动态</string>
+    <string name="myself_fragment">我</string>
+    <string name="about">关于窗友</string>
+    <string name="back">返回</string>
+    <string name="newsInform">消息通知</string>
+
+    <array name="items">
+        <item>从相册中选择</item>
+        <item>拍照</item>
+    </array>
+    <!-- skin_layout.xml -->
+    <string name="kind_skin">皮肤</string>
+    <!-- skin_layout.xml -->
+
+
+    <!-- 皮肤名称 -->
+    <string name="skin_name_0_show">默认皮肤</string>
+    <string name="skin_name_1_show">皮肤1</string>
+    <string name="skin_name_2_show">皮肤2</string>
+    <string name="title_activity_account">账号</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- about_layout.xml -->
+    <string name="version">窗友    1.0</string>
+    <string name="version_update">检查新版本</string>
+    <string name="function_introduction">功能介绍</string>
+    <string name="feedback">意见反馈</string>
+    <!-- about_layout.xml -->
+
+
+    <!-- account_layout.xml -->
+    <string name="name">姓名</string>
+    <string name="sign">个性签名</string>
+    <string name="sex">性别</string>
+    <string name="birth_place">出生地</string>
+    <string name="Enter_ID">校友号</string>
+    <string name="Myschool">我的学校</string>
+    <string name="Myjob">我的单位</string>
+    <string name="Workingplace">我的单位</string>
+    <!-- account_layout.xml -->
+
+
+    <!-- contact_layout.xml -->
+    <string name="Group">群组</string>
+    <!-- contact_layout.xml -->
+
+
+    <!-- myschool_layout.xml -->
+    <string name="myUniversity">我的大学</string>
+    <string name="college">大学</string>
+    <string name="EnterTime">入学时间</string>
+    <string name="GraduateTime">毕业时间</string>
+    <!-- myschool_layout.xml -->
+
+
+    <!-- myself_layout.xml -->
+    <string name="myAlbum">我的相册</string>
+    <!-- myself_layout.xml -->
+
+
+    <!-- news_layout.xml -->
+    <string name="night_anti">夜间勿扰</string>
+    <string name="night_anti_describe">开启后，窗友自动屏蔽23:00-8：00的任何提醒。</string>
+    <string name="content_describe">若关闭，当收到消息时，通知栏将不提示消息摘要和发信人。</string>
+    <string name="message_show">通知显示消息内容</string>
+    <string name="led_on">通知时指示灯闪烁</string>
+    <string name="still_receive">退出后仍接收消息通知</string>
+    <!-- news_layout.xml -->
+
+
+    <!-- sounds_layout.xml -->
+    <string name="message_inform">新消息提示</string>
+    <string name="vibrate">振动提醒</string>
+    <string name="group_vibrate">群振动</string>
+    <string name="sound">声音提醒</string>
+    <string name="group_sound">群声音</string>
+    <string name="kind_sound">提示音类型</string>
+    <!-- sounds_layout.xml -->
+
+
+    <!-- refresh_layout.xml -->
+    <string name="pull_to_refresh">下拉加载更多</string>
+    <string name="release_to_refresh">释放立即加载</string>
+    <string name="refreshing">正在加载…</string>
+    <string name="not_updated_yet">暂未刷新过</string>
+    <string name="updated_at">上次刷新于%1$s前</string>
+    <string name="updated_just_now">刚刚刷新</string>
+    <string name="time_error">时间有问题</string>
+    <!-- refresh_layout.xml -->
+
+
+    <!-- setting_layout.xml -->
+    <string name="permisson">权限与隐私</string>
+    <string name="common">通用</string>
+    <string name="newInform">新消息提醒</string>
+    <string name="finish">退出</string>
+    <!-- setting_layout.xml -->
+
+    <string name="test_image_url">http://192.168.1.102:8080/tomcat.png</string>
+    <string name="plz_input_account">输入手机号</string>
+    <string name="plz_input_psw">请输入密码</string>
+    <string name="login">登陆</string>
+    <string name="register">注册</string>
+    <string name="sextype">性别</string>
+    <string name="title_activity_notification_receiver">NotificationReceiver</string>
+
+    <!-- The label for use as a searchable item -->
+    <string name="search_label">Dictionary</string>
+    <!-- The hint text that appears in the search box. -->
+    <string name="search_hint">搜索同学</string>
+    <!-- The menu entry that invokes search. -->
+    <string name="menu_search">搜索</string>
+    <!-- The description that will show up in the search settings for this source. -->
+    <string name="settings_description">description of a person </string>
+    <!-- General instructions in the main activity. -->
+    <string name="search_instructions">Use the search box in the Action Bar to search a person</string>
+    <!-- user groupchat -->
+    <string name="title_activity_group_chat">GroupChatActivity</string>
+    <string name="group_chat_create_confirm_text">确定</string>
+    <string name="exitst_group_chat_title">已存在群聊组</string>
+    <string name="search_friends_title">查找好友</string>
+    <string name="group_chat_new_room_name">群聊室名字</string>
+    <string name="title_activity_logo">LogoActivity</string>
+    <string name="title_activity_introduction">IntroductionActivity</string>
+    <string name="title_activity_channel_select">管理消息订阅</string>
+    <string name="drawer_btn_rss">频道管理</string>
+    <string name="subscribe_my_category">我的订阅频道</string>
+    <string name="subscribe_more_category">更多频道</string>
+    <string name="subscribe_manager_category_info">单击增删频道</string>
+    <string name="subscribe_manager_category_info_2">单击增删频道,长按拖拽排序</string>
+    <string name="subscribe_my_category_1">我的阅读兴趣</string>
+    <string name="subscribe_more_category_1">更多兴趣</string>
+    <string name="subscribe_manager_category_info_1">单击增删兴趣标签</string>
+    <string name="subscribe_manager_category_info_1_2">单击增删兴趣标签,长按拖拽排序</string>
+    <string name="no_search_results">抱歉，没有搜索到相关校友</string>
+    <string name="no_classmate">暂时没有校友给您推荐</string>
+    <string name="title_activity_chat_detail">查看消息</string>
+
+</resources>

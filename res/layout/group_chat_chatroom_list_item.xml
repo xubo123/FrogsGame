@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/group_chat_chatroom_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/userlogo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/group_chat_chatroom_icon"
+        android:layout_toRightOf="@id/group_chat_chatroom_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/group_chat_chatroom_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:ellipsize="end"
+            android:paddingLeft="4dp"
+            android:singleLine="true"
+            android:text="nickname"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/group_chat_chatroom_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingLeft="4dp"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:text="signature"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/group_chat_chatroom_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_singlenews_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@color/white"
+    android:clickable="true"
+    android:onClick="newsOnClick" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_light_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="60dp"
+            android:alpha="0.75"
+            android:gravity="center|left"
+            android:paddingRight="5dp"
+            android:text="新闻标题"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/imageView_news_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView_news_title"
+            android:scaleType="fitXY"
+            android:src="@drawable/bglogo" />
+    </RelativeLayout>
+
+</RelativeLayout>

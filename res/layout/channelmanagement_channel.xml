@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="8dp" >
+
+    <RelativeLayout
+        android:layout_width="53dp"
+        android:layout_height="53dp" >
+ <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingRight="3dp" >
+        <ImageView
+            android:id="@+id/iv_channelm_cicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bglogo" />
+    </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_channelm_redpoint"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/redpoint"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_channelm_unread"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="invisible" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            >
+
+            <TextView
+                android:id="@+id/textView_channelm_cname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="nickname"
+                android:textSize="18sp" 
+                 android:paddingLeft="3dp"
+                 android:singleLine="true"
+		android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/textView_channelm_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                
+                android:textSize="12sp" 
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@+id/textView_channelm_cname"
+                android:textColor="@android:color/darker_gray"
+               android:singleLine="true"
+				android:ellipsize="end"/>
+
+        </RelativeLayout>
+        
+         <TextView
+                android:id="@+id/textView_channelm_latestmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+                
+                android:textSize="16sp" 
+                android:paddingLeft="4dp"
+     			android:paddingTop="3dp"
+                android:singleLine="true"
+				android:ellipsize="end"
+                android:textColor="@android:color/darker_gray"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/registe_background"
+    
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.register.MainActivity" >
+
+    <ImageView
+        android:id="@+id/logo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_grey" />
+
+    <LinearLayout
+        android:id="@+id/information_fill"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/edit_school"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@layout/edit_shape"
+                
+                android:hint="请选择学校" />
+
+            <Button
+                android:id="@+id/choose_school_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/edit_school"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@+id/edit_school"
+                android:background="@layout/btn_shape"
+                android:text="->" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/name_2"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@layout/edit_shape"
+            android:hint="真实姓名 " />
+
+        <EditText
+            android:id="@+id/phoneNum_2"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@layout/edit_shape"
+            android:hint="手机号" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/registeCode_2"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@layout/edit_shape"
+                android:hint="验证码" />
+
+            
+            <Button
+                android:id="@+id/getCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/registeCode_2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@+id/registeCode_2"
+                android:background="@layout/btn_shape"
+                android:text="获取验证码" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/password_2"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:background="@layout/edit_shape"
+            android:hint="登陆密码" />
+
+        <EditText
+            android:id="@+id/passwordcheck_2"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:background="@layout/edit_shape"
+            android:hint="确认密码" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/complete_registe"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/information_fill"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@layout/btn_shape"
+        android:text="完成" />
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/complete_registe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="点击【完成】按钮，代表您已阅读并同意"
+        android:textColor="@color/registe_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_1"
+        android:layout_centerHorizontal="true"
+        android:text="窗友软件许可及服务协议"
+        android:textColor="@color/registe_text_2"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_singlenews_breaking"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:clickable="true"
+    android:onClick="newsOnClick"
+    android:background="@color/white"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/imageView_news_icon"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray"
+        android:scaleType="fitXY"
+        android:src="@drawable/loading_news_image" />
+
+    <TextView
+        android:id="@+id/textView_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_news_icon"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.75"
+        android:background="@android:color/black"
+        android:gravity="center_horizontal"
+        android:text="新闻标题"
+        android:singleLine="true"
+android:ellipsize="end"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

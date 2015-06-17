@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4FC1E9"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image" />
+
+    <com.hust.schoolmatechat.login.LineEditText
+        android:id="@+id/telphone_login"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/cornersup"
+        android:ems="10"
+        android:hint="手机号码"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <com.hust.schoolmatechat.login.LineEditText
+        android:id="@+id/password_login"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/telphone_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="#FFFFFF"
+        android:inputType="textPassword"
+        android:hint="密   码"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+         android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password_login" >
+
+        <TextView
+            android:id="@+id/school_text"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/cornersdown"
+            android:hint="请选择学校"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/choose_school"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/school_text"
+            android:layout_alignBottom="@+id/school_text"
+            android:layout_alignTop="@+id/school_text"
+            android:background="@layout/btn_shape"
+            android:text="->" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/school_login"
+        android:layout_below="@+id/relativelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/login"
+        android:onClick="OnLoginClicked"
+        android:text="登    录"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:color="#276074" />
+
+    <TextView
+        android:id="@+id/forgetpsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="忘记密码"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_alignRight="@+id/school_login"
+        android:layout_below="@+id/forgetpsw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/register"
+        android:onClick="OnLoginClicked"
+        android:text="注     册"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>

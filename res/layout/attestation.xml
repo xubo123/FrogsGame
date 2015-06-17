@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/grade_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center|left"
+        android:text="请选择您的班级："
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/academe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:animationCache="true"
+        android:drawSelectorOnTop="true" 
+        android:layout_below="@+id/grade_text"
+        android:layout_marginTop="5dp" >
+    </Spinner>
+
+    <Button
+        android:id="@+id/selectClass"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/academe"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/menu_cell_background"
+        android:text="确认班级"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/selectClass"
+        android:layout_below="@+id/selectClass"
+        android:layout_marginTop="5dp"
+        android:gravity="center|left"
+        android:text="请选择同班其他三个同学姓名："
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/select_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/selectClass"
+        android:layout_below="@+id/textView1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/classmate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学1" />
+
+            <CheckBox
+                android:id="@+id/classmate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学2" />
+
+            <CheckBox
+                android:id="@+id/classmate3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/classmate4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学4" />
+
+            <CheckBox
+                android:id="@+id/classmate5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学5" />
+
+            <CheckBox
+                android:id="@+id/classmate6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/classmate7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学7" />
+
+            <CheckBox
+                android:id="@+id/classmate8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学8" />
+
+            <CheckBox
+                android:id="@+id/classmate9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="同学9" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/select_1"
+        android:layout_below="@+id/select_1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/menu_cell_background"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/words"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/register"
+        android:layout_below="@+id/register"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="点击上面的【注册】，即表示你同意" />
+
+    <TextView
+        android:id="@+id/text_words"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/words"
+        android:layout_below="@+id/words"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="《窗友软件许可及服务协议》"
+        android:textColor="#87ceeb" />
+
+</RelativeLayout>

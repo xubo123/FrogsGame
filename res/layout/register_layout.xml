@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/grade_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center|left"
+        android:text="请选择您的班级："
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/academe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grade_text"
+        android:layout_marginTop="3dp" >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/academe"
+        android:layout_below="@+id/academe"
+        android:layout_marginTop="3dp"
+        android:gravity="center|left"
+        android:text="请填写三个同学姓名："
+        android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/classmateone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignRight="@+id/academe"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="3dp"
+            android:hint="同学一" >
+
+        </EditText>
+
+    <EditText
+        android:id="@+id/classmatethree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classmatetwo"
+        android:layout_alignRight="@+id/classmatetwo"
+        android:layout_below="@+id/classmatetwo"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:hint="同学三" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/classmatetwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classmateone"
+        android:layout_alignRight="@+id/classmateone"
+        android:layout_below="@+id/classmateone"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:hint="同学二" />
+
+<Button
+    android:id="@+id/register"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:layout_alignLeft="@+id/classmatethree"
+    android:layout_below="@+id/classmatethree"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/menu_cell_background"
+    android:text="注册"
+    android:textColor="@color/white"
+    android:textSize="18sp" />
+<TextView
+    android:id="@+id/words"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/register"
+    android:layout_below="@+id/register"
+    android:layout_marginTop="15dp"
+    android:gravity="center"
+    android:text="点击上面的【下一步】，即表示你同意" />
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/words"
+    android:layout_below="@+id/words"
+    android:layout_marginTop="3dp"
+    android:text="《窗友软件许可及服务协议》"
+    android:gravity="center"
+    android:textColor="#87ceeb" />
+
+</RelativeLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hust.schoolmatechat"
+    android:versionCode="2015042601"
+    android:versionName="1.2015042601" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.hust.schoolmatechat" >
+    </instrumentation>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.hust.schoolmatechat.SchoolMateChat"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_launcher"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.hust.schoolmatechat.ListViewAcitivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/action_collection"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.MainActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+
+        <!-- 为此应用私有的独立进程 没有“:”分号的，则创建全局进程，不同的应用程序共享该进程 -->
+        <service
+            android:name="com.hust.schoolmatechat.DataCenterManagerService.DataCenterManagerService"
+            android:persistent="true" >
+        </service>
+
+        <activity
+            android:name="com.hust.schoolmatechat.SettingActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="设置"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.NewsInforActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="新消息提醒"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.SoundsActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="声音"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.AboutActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="关于窗友"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.AccountActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="个人信息"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.StudyExActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="我的学校"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.SkinActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="皮肤"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.register.ChooseAttentionActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="欢迎注册窗友"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.register.ChangePasswordActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="修改密码"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.ChatActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.register.RegisterActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="注册"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.register.attestationActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="注册"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.PictureSelectActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="选择图片"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.NewsExploreActivitiy"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.LoginActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="登录窗友"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+
+        <!-- <service android:name="com.hust.schoolmatechat.msgservice.ChatService" > -->
+        <!-- </service> -->
+        <!-- <service android:name="com.hust.schoolmatechat.com.hust.schoolmatechat.DataCenterManagerService.DataCenterManagerService" > -->
+        <!-- </service> -->
+        <service
+            android:name="com.hust.schoolmatechat.ChatMsgservice.ChatMsgService"
+            android:persistent="true" >
+        </service>
+        <service
+            android:name="com.hust.schoolmatechat.pushedmsgservice.PushedMsgService"
+            android:persistent="true" >
+        </service>
+        <!-- 广播注册 -->
+        <receiver android:name="com.hust.schoolmatechat.engine.ReplaceBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.hust.schoolmatechat.NotificationReceiver"
+            android:label="@string/title_activity_notification_receiver" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.SearchResultsActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="搜索结果"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+
+            <!-- Receives the search request. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <!-- Points to searchable meta data. -->
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <!-- Provides search suggestions for words and their definitions. -->
+        <provider
+            android:name="com.hust.schoolmatechat.SearchSuggestionProvider"
+            android:authorities="com.hust.schoolmatechat.SearchSuggestionProvider" />
+<!-- Provides for local db use. -->
+        <provider android:name="com.hust.schoolmatechat.provider.CYProvider" 
+            android:exported="false"
+            android:authorities="com.hust.schoolmatechat.provider"></provider>
+        <!-- Points to searchable activity so the whole app can invoke search. -->
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.hust.schoolmatechat.SearchResultsActivity" />
+
+        <activity
+            android:name="com.hust.schoolmatechat.LogoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.IntroductionActivity"
+            android:label="@string/title_activity_introduction"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.FriendProfileActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+		<activity
+        	android:name="com.hust.schoolmatechat.CreateGroupChatActivity"
+        	android:label="@string/title_activity_group_chat" >
+        </activity>
+        <activity
+        	android:name="com.hust.schoolmatechat.ViewGroupChatDetailedInfoActivity"
+        	android:label="@string/title_activity_group_chat" >
+        </activity>
+        <activity
+        	android:name="com.hust.schoolmatechat.GroupChatKickActivity"
+        	android:label="@string/title_activity_group_chat" >
+        </activity>
+        <activity
+        	android:name="com.hust.schoolmatechat.GroupChatJoinActivity"
+        	android:label="@string/title_activity_group_chat" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.channelselect.ChannelSelectActivity"
+            android:label="@string/title_activity_channel_select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.ChatDetailActivity"
+            android:label="@string/title_activity_chat_detail" >
+        </activity>
+        
+                 <activity
+            android:name="com.hust.schoolmatechat.register_2.RegisteActivity_2"
+            android:icon="@drawable/ic_launcher"
+            android:label="注册"
+            android:screenOrientation="portrait" >
+        </activity>
+          <activity
+            android:name="com.hust.schoolmatechat.register_2.Complete_registeActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="返回"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.register_2.ProvinceChooseActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="返回"
+            android:screenOrientation="portrait" >
+        </activity>
+          <activity
+            android:name="com.hust.schoolmatechat.register_2.SchoolChooseActivity"
+            android:icon="@drawable/ic_launcher"
+          
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.hust.schoolmatechat.register_2.ClassChooseActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="选择班级"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hust.schoolmatechat.register_2.SelectClassmatesActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="选择同學"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="newsOnClick"
+    android:orientation="horizontal"
+    android:paddingTop="20dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:id="@+id/relativeLayout1help"
+             android:paddingRight="3dp" 
+             android:paddingLeft="8dp" >
+
+
+
+                <ImageView
+                    android:id="@+id/iv_schoolhelper_cicon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bglogo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/relativeLayout1help" >
+
+            <TextView
+                android:id="@+id/textView_schoolhelper_cname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:paddingLeft="3dp"
+                android:singleLine="true"
+                android:text="nickname"
+                android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>

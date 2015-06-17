@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/room_delete"
+        android:title="删除群"/>
+    <item
+        android:id="@+id/room_detailed_info"
+        android:title="查看详细信息"/>
+    <item
+        android:id="@+id/room_add_person"
+        android:title="加人"/>
+    <item
+        android:id="@+id/room_kick_person"
+        android:title="踢人"/>
+    <item
+        android:id="@+id/room_exit"
+        android:title="退群"/>
+
+</menu>
